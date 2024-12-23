@@ -7,6 +7,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      
+      fontFamily:{
+        title:["Roboto" , "sans-serif"],
+        rubik:["rubik" , "sans-serif"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
