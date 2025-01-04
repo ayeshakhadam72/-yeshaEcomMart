@@ -1,40 +1,67 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import Productdata from '../productdata'
+import { IoCartOutline } from "react-icons/io5";
+import { CiHeart } from "react-icons/ci";
+import { MdOutlineStar } from "react-icons/md";
 
-
-const Reusecard = ({image ,graytext ,heading ,price,pricenew ,border ,Addproduct,b }) => {
+const Reusecard = ({ image, New, view, myproduct, graytext, heading, price, pricenew, border, Addproduct, b }) => {
+  const [loader, setLoader] = useState();
+console.log('sa')
   return (
     <>
-   
+      <div className={`${border} bg-white group relative sameclass shadow-2xl rounded-xl  border-[1px] border-gray-300   `} >
 
-    {/*  */}
-  
-  
+        <div className=''>
+          <Image src={image} className={`${border}`} width={252} height={254} />
+        </div>
+        <div className='Quick Shop  opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex 
+justify-center  absolute  bottom-[36%] w-full bg-[#161880] hover:bg-black ' >
+          <button onClick={() => { Addproduct(b) }} className='flex gap-1 text-white text-md p-3   '>
+            <span className='flex items-center'><IoCartOutline className='text-xl ' /></span>
+            <span>Quick Shop</span>  </button>
+        </div>
 
- 
-        <div className= {`${border} shadow-2xl rounded-2xl  border-[1px] border-gray-300  mt-3  sm:my-10   `} >
+        <div className='absolute bottom-[89%]  '>
+          <h2 className='bg-[#161880] text-white ml-3 px-3  rounded-tl-lg rounded-br-lg'>
+            {New}
+          </h2>
+        </div>
 
-        {/* width={300} height={300}  */}
-        <Image src={image}   width={252} height={254} />
-                <h2 className='text-[#b6b6b7] text-sm font-semibold '>
-                    {graytext }
-                </h2>
-                <h2  className='text-black text-xl font-semibold py-2 hover:text-[#eb6a2a] '>
-                {heading}
-        
-                </h2>
-                <h2 >
-               <span><del className='text-[#b6b6b7] text-sm'> {price} </del></span> <span className='text-black text-xl font-semibold ' >{pricenew} </span> 
-                </h2>
-                <button  onClick={() => { Addproduct(b)}}  className='mb-5 px-8 py-2 mt-4 bg-black hover:bg-[#eb6a2a] text-white text-sm'>Add To Card </button>
-            </div>
-    
-       
-     
-   
-     </>
-   
+        <div onClick={() => { Addproduct(b) }} className='absolute bottom-[87%] left-[80%] '>
+          <div className=''>
+            <button className='     opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-md shadow-2xl
+    bg-white hover:bg-[#161880] text-black hover:text-white px-2 py-1  '><CiHeart className='text-2xl' /></button>
+          </div>
+
+        </div>
+
+        <div className='pl-5'>
+
+          <h2 className={`${border} text-black text-lg font-semibold py-2   `} >
+            {heading} </h2>
+
+          <h2>
+            <span className='text-black text-md font-semibold ' >Rs: {pricenew} </span>
+          </h2>
+          <h2 className='pt-2 flex gap-1'>
+            <span className='flex text-yellow-500 items-center text-lg '>
+              <MdOutlineStar /><MdOutlineStar /><MdOutlineStar /><MdOutlineStar /><MdOutlineStar /></span>
+
+            <span className='text-md' >{view}</span>
+          </h2>
+          <h2 className='text-[#337239]  pt-2 pb-5 '>
+            <li > <span className='text-md'>{graytext}</span>  </li>
+          </h2>
+
+        </div>
+      </div>
+
+
+
+
+    </>
+
   )
 }
 

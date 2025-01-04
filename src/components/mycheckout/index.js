@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react'
 import { MdKeyboardArrowUp } from "react-icons/md";
 
-import Watch1 from "../../../public/Watch1.jpg"
+import Watch1 from "../../../public/Watch1.png"
 import Link from 'next/link';
 const Mycheckout = ({basket}) => {
     const mytotal = () => {

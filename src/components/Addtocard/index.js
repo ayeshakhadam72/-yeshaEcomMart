@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 import { FiShoppingCart } from "react-icons/fi";
-import Watch3 from "../../../public/Watch3.jpg"
+import Watch3 from "../../../public/Watch3.png"
 
 const Addtoardproduct = () => {
 

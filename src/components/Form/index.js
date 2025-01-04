@@ -4,7 +4,7 @@ import { FaRegEnvelope } from "react-icons/fa";
 const Form = () => {
   return (
     <>
-   <div className='w-full pt-20'>
+   <div className='w-full pt-10'>
     <div className='w-[90%] xl:w-[60%]  mx-auto   '>
 
 <div class="pt-20 pb-10 border-b-[1px] border-gray-600 w-[100%]  text-center ">

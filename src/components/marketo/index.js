@@ -6,18 +6,18 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 const Marketo = () => {
   return (
    <>
-   <div>
-    <h2 className='mt-16 text-black text-3xl  font-[900] font-title text-center'>Marketo <span className='font-bold text-[#f37b3f]'>.</span></h2>
+   <div className='bg-white mt-10'>
+    <h2 className='pt-16 text-black text-3xl  font-[900] font-title text-center'>@yesha.EcomMart.</h2>
    </div>
-   <div className='my-16 flex justify-center gap-24 flex-wrap px-2'>
+   <div className='py-16 flex justify-center gap-24 flex-wrap px-2 bg-white'>
 <div className='font-title'>
     <h2 className='text-[#999]  text-[24px] font-[500] '>Got Question? Call us 24/7</h2>
     <h2 className="text-black text-[22px] "> [80] 1017 197</h2>
     <p className="text-sm text-[#777] py-5 "> <i>  17 Princess Road, London, Greater<br/> London NW1 8JR, UK</i> </p>
-    <button className='flex gap-1 items-center rounded-lg bg-[#f07f13] px-8 text-sm py-4 lg:px-8 text-white hover:bg-[#f37b3f] '> <FaMapMarkerAlt />    View On Map </button>
+    <button className='flex gap-1 items-center rounded-lg bg-green-500 px-8 text-sm py-4 lg:px-8 text-white hover:bg-[] '> <FaMapMarkerAlt />    View On Map </button>
 </div>
 {/*  */}
-<div>
+<div className='hidden md:block'>
     <h2 className="text-[#999] text-2xl font-[500]">We Using</h2>
     <h2 className="heading text-[#444] text-[22px] font-[500] ">Safe Payments</h2>
     <h2 className="p-5"></h2>
