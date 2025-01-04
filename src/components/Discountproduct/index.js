@@ -4,11 +4,11 @@ import React from 'react'
 import Sidepic from "../../../public/Sidepic.jpg"
 import Link from 'next/link'
 import Reusecard from '../reusecard'
-import Watch1 from "../../../public/Watch1.jpg"
-import Watch2 from "../../../public/Watch2.jpg"
-import Watch3 from "../../../public/Watch3.jpg"
-import Watch4 from "../../../public/Watch4.jpg"
-import Watch5 from "../../../public/Watch5.jpg"
+// import Watch1 from "../../../public/Watch1.jpg"
+// import Watch2 from "../../../public/Watch2.jpg"
+// import Watch3 from "../../../public/Watch3.jpg"
+// import Watch4 from "../../../public/Watch4.jpg"
+// import Watch5 from "../../../public/Watch5.jpg"
 import Productdata from '../productdata'
 const Discountproduct = ({ Addproduct, b, loader }) => {
     return (

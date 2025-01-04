@@ -17,15 +17,16 @@ const Product = ({basket, Addproduct, ali}) => {
   return (
     <>
 
+<Headerafterabout Aboutus={"Product Category V2"} givespace={'mt-5'} />
      
-      <Headerafterabout Aboutus={"Product Category V2"} givespace={'mt-5'} />
       <Bannerproduct />
       {/* <ItemsProduct  /> */}
-      <ThreeProductcard Addproduct={Addproduct} />
-      <Bestdeal Addproduct={Addproduct} />
-      <Reusestructure  Addproduct={Addproduct} />
+      {/* <ThreeProductcard Addproduct={Addproduct} /> */}
+      {/* <Reusestructure  Addproduct={Addproduct} /> */}
       {/* <Addtoardproduct /> */}
       <ProductClickItems basket={basket} Addproduct={Addproduct}  />
+      <Bestdeal Addproduct={Addproduct} />
+
       <Marketo/>
     </>
   )

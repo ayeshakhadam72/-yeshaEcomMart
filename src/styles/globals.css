@@ -13,7 +13,9 @@
 #diamond:hover::after{
     position: absolute;
     content: '';
-    background-color: #0063d1;
+    /* background-color: #0063d1; */
+    background: linear-gradient(to right, #f5b908, #7fd858);
+    /* background-color:  linear-gradient(to right, #f5b908, #7fd858);; */
     /* background-color: red; */
     
     /* left: 25%; */
@@ -60,28 +62,6 @@
 #parent:hover .mydropdown{
 display: block !important ; 
 }
-.swiper {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-  
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
   .swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled{
     display: none;
   }  
@@ -110,11 +90,48 @@ display: block !important ;
     background-size: cover;
     background-repeat: no-repeat;
     height:600px;
-    width: 1050px;
+    width:1050px;
     border-radius: 30px;
   }
+  @media (min-width: 1024px) and (max-width: 1536px) {
+    #bgbanner1{
+      background-image: url('/banner12.png');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height:600px;
+      width:1175px;
+      border-radius: 30px;
+    }
+    #bgbanner2{
+  
+      background-image: url('/banner11.png');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height:600px;
+      width: 1175px;
+      border-radius: 30px;
+      /* height: 480px;
+      width: 770px; */
+    }
+    #bgbanner3{
+      
+      background-image: url('/banner13.png');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height:600px;
+      width: 1175px;
+      border-radius: 30px;
+    }
+
+  }
+  
+  
+  
   #bgbanner2{
-    display: block;
+  
     background-image: url('/banner11.png');
     background-position: center;
     background-size: cover;
@@ -126,7 +143,7 @@ display: block !important ;
     width: 770px; */
   }
   #bgbanner3{
-    display: block;
+    
     background-image: url('/banner13.png');
     background-position: center;
     background-size: cover;
@@ -140,18 +157,87 @@ display: block !important ;
   background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 450px;
+    width: 400px;
     height: 288px;
     border-radius: 30px;
+  
 }
+
 #bgbanner15{
   background-image: url('/banner15.png');
   background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 450px;
+    width: 400px;
     height: 288px;
     border-radius: 30px;
+}
+
+
+@media (min-width: 768px) and (max-width: 1536px) {
+  #bgbanner4{
+    background-image: url('/banner14.png');
+    background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 600px;
+      height: 288px;
+      border-radius: 30px;
+    
+  }
+  
+  #bgbanner15{
+    background-image: url('/banner15.png');
+    background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 580px;
+      height: 288px;
+      border-radius: 30px;
+  }
+}
+
+@media (min-width: 440px) and (max-width: 640px){
+  #bgbanner4{
+    background-image: url('/banner14.png');
+    background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 365px;
+      height: 288px;
+      border-radius: 30px;
+    
+  }
+  #bgbanner15{
+    background-image: url('/banner15.png');
+    background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 365px;
+      height: 288px;
+      border-radius: 30px;
+  }
+}
+@media (min-width: 310px) and (max-width: 440px){
+  #bgbanner4{
+    background-image: url('/banner14.png');
+    background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 260px;
+      height: 288px;
+      border-radius: 30px;
+    
+  }
+  #bgbanner15{
+    background-image: url('/banner15.png');
+    background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 260px;
+      height: 288px;
+      border-radius: 30px;
+  }
 }
 
 #bgbanner16{
@@ -174,3 +260,115 @@ display: block !important ;
     height: 300px;
     border-radius: 30px;
 }
+@media (min-width: 440px) and (max-width: 640px){
+#bgbanner16{
+  background-image: url('/banner16.png');
+  background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    width: 365px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+#bgbanner17{
+  background-image: url('/banner17.png');
+  background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 365px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+}
+@media (min-width: 310px) and (max-width: 440px){
+  #bgbanner16{
+    background-image: url('/banner16.png');
+    background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    
+      width: 260px;
+      height: 300px;
+      border-radius: 30px;
+  }
+  
+  #bgbanner17{
+    background-image: url('/banner17.png');
+    background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 260px;
+      height: 300px;
+      border-radius: 30px;
+  }
+}
+
+/*  */
+body{
+  background-color: #f1f3f7;
+
+}
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.GOprobanner{
+  background-image: url('/iphonebanner.png');
+  background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* width: 365px; */
+    height: 300px;
+    border-radius: 30px;
+}
+
+.GOprobanner1{
+  background-image: url('/ironic.png');
+  background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* width: 365px; */
+    height: 300px;
+    border-radius: 30px;
+}
+.sideayeshamy{
+  background-image: url('/ayesha.png');
+  background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 780px;
+    width: 436px;
+}
+#aboutbanner{
+  background-image: url('/mineaboutbanner.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 100%;
+}
+/* .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}  */

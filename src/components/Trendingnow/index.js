@@ -2,10 +2,7 @@
 import React from 'react'
 import Reusecard from '../reusecard'
 
-import Watch1 from "../../../public/Watch1.jpg"
-import Watch2 from "../../../public/Watch2.jpg"
-import Watch3 from "../../../public/Watch3.jpg"
-import Watch4 from "../../../public/Watch4.jpg"
+
 import Productdata from '../productdata'
 
 
@@ -14,12 +11,14 @@ const Trendingnow = ( {Addproduct}) => {
    <>
   
    
-   
-<div className='flex justify-center gap-10 flex-wrap '>
+   <div className='flex justify-center'>
+
+   <div className='mx-5 lg:mx-0 lg:w-[80%] justify-center md:justify-normal flex gap-10 flex-wrap'>
 {
-  Productdata.slice(0,1).map((b) =>{
+  Productdata.slice(10,20).map((b) =>{
     return(
-      <Reusecard border={'border-none'} image={b.productimage} graytext = {' Drone'} heading =  {b.productname} price= {'$720.00'} pricenew={b.productprice} b={b} Addproduct={Addproduct} />
+      <Reusecard border={'mt-5    border-none hover:text-[#161880]'} image={b.productimage}  heading =  {b.productname} price= {'$720.00'} pricenew= {b.productprice} b={b} Addproduct={Addproduct} 
+      graytext={b.productstock}  stars={''} view={'1 view'}/>
     )
   })
 
@@ -27,6 +26,9 @@ const Trendingnow = ( {Addproduct}) => {
 
 
 </div>
+
+   </div>
+
    </>
   )
 }

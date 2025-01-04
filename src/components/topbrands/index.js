@@ -12,10 +12,10 @@ import Topbrand4 from "../../../public/Topbrand4.png"
 const Topbrands = () => {
   return (
    <>
-   <h2 className='text-2xl text-center my-10 font-semibold'>Top Brands </h2>
-   <div className='flex justify-center gap-20 xl:gap-32 flex-wrap px-3'>
+   <h2 className='text-4xl text-center mt-20 mb-10 font-semibold'>Top Brands </h2>
+   <div className='py-10 flex justify-center gap-20 xl:gap-32 flex-wrap bg-white px-3'>
  
-    <div>
+    <div >
         <Image src={Topbrand5} /> 
          <Image src={Topbrand6} />
     </div>

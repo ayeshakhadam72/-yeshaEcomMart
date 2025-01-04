@@ -9,7 +9,7 @@ import { FaSearch } from "react-icons/fa";
 import Image from 'next/image';
 import Logomy from "../../../public/Logomy2.png"
 import Link from 'next/link';
-import Watch2 from '../../../public/Watch2.jpg'
+import Watch2 from '../../../public/Watch2.png'
 
 const Navbar = ({ cart , basket }) => {
   // const [mycategory , setMycategory] = useState(true)
@@ -130,7 +130,7 @@ const Navbar = ({ cart , basket }) => {
         </li>
       </ul>
     </div>
-      {/* addtocart  */}
+      {/* addtocart  */} x
       <div className={`${openIcon ? 'block ' : 'hidden'} flex justify-end `} >
         <div id='sideicontoggle' className='pt-5 text-right shadow-xl '  >
           <span onClick={iconsclose} className='border-[1px] border-gray-400 mx-8 px-[12px] py-[4px]  rounded-full text-xl text-[13px] text-[#7c7878fc] ml-5'> X  </span>
