@@ -13,23 +13,23 @@ import Trendingnow from '@/components/Trendingnow'
 import Twocontentimg from '@/components/Twocontentimg'
 import React from 'react'
 
-const Home = ({ Addproduct , basket }) => {
+const Home = ({ Addproduct, basket, loader }) => {
   return (
-  <>
-  <MyProductBanners/>
- {/* <MyBannerhome/> */}
-  {/* <Bannerheader /> */}
-  {/* <Twocontentimg/> */}
-  <Trendingnow Addproduct={Addproduct}  />
-  <Topbrands/>
-  <Luxurywatch/>
-  <Discountproduct Addproduct={Addproduct} />
-  <MostViewd  />
-  <Trendingnow Addproduct={Addproduct}  />
-  <Country/>
-  <Marketo/>
- 
-  </>
+    <>
+      <MyProductBanners />
+      {/* <MyBannerhome/> */}
+      {/* <Bannerheader /> */}
+      {/* <Twocontentimg/> */}
+      <Trendingnow Addproduct={Addproduct} />
+      <Topbrands />
+      <Luxurywatch />
+      <Discountproduct loader={loader} Addproduct={Addproduct} />
+      <MostViewd />
+      <Trendingnow Addproduct={Addproduct} />
+      <Country />
+      <Marketo />
+
+    </>
   )
 }
 
