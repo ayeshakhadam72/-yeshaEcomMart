@@ -1,91 +1,101 @@
-import Link from 'next/link';
-import React from 'react'
-import { FaMapMarkerAlt } from "react-icons/fa";
+import Image from "next/image";
+import React from "react";
+import Logo from "../../../public/navbar/OnlineStorelogo.png"
+import {
+    FaFacebook,
+    FaGithub,
+    FaInstagram,
+    FaTwitter,
+    FaTwitch,
+} from "react-icons/fa";
+import Magnet from "../Magnet";
 
+const sections = [
+
+
+    {
+        title: "Company",
+        items: ["About", "Blog", "Jobs", "Press", "Partners"],
+    },
+    {
+        title: "Legal",
+        items: ["Claims", "Privacy", "Terms", "Policies", "Conditions"],
+    },
+];
+
+const items = [
+    { name: "Facebook", icon: FaFacebook, link: "https://www.facebook.com/" },
+    { name: "Instagram", icon: FaInstagram, link: "https://www.instagram.com/" },
+    { name: "Twitter", icon: FaTwitter, link: "https://twitter.com/" },
+    { name: "Twitch", icon: FaTwitch, link: "https://www.twitch.tv/" },
+    { name: "Github", icon: FaGithub, link: "https://github.com/" },
+];
 
 const Marketo = () => {
-  return (
-   <>
-   <div className='bg-white mt-10'>
-    <h2 className='pt-16 text-black text-3xl  font-[900] font-title text-center'>@yesha.EcomMart.</h2>
-   </div>
-   <div className='py-16 flex justify-center gap-24 flex-wrap px-2 bg-white'>
-<div className='font-title'>
-    <h2 className='text-[#999]  text-[24px] font-[500] '>Got Question? Call us 24/7</h2>
-    <h2 className="text-black text-[22px] "> [80] 1017 197</h2>
-    <p className="text-sm text-[#777] py-5 "> <i>  17 Princess Road, London, Greater<br/> London NW1 8JR, UK</i> </p>
-    <button className='flex gap-1 items-center rounded-lg bg-green-500 px-8 text-sm py-4 lg:px-8 text-white hover:bg-[] '> <FaMapMarkerAlt />    View On Map </button>
-</div>
-{/*  */}
-<div className='hidden md:block'>
-    <h2 className="text-[#999] text-2xl font-[500]">We Using</h2>
-    <h2 className="heading text-[#444] text-[22px] font-[500] ">Safe Payments</h2>
-    <h2 className="p-5"></h2>
-    <h2 className=' text-black text-[16px] font-[500]'>Secured by: </h2>
-</div>
-{/*  */}
-<div>
-    <h2 className="heading text-[#1c1c24] text-[18px] font-[500] font-title ">Quick Links</h2>
-    <ul className=' text-sm text-[#777] font-title '>
-        <li className='hover:text-[#eb6a2a] pt-4'>
-            <Link href={'/'} >Support Center</Link>
-        </li>
-        <li className='hover:text-[#eb6a2a]  pt-2'>
-            <Link href={'/'} >Support Center</Link>
-        </li>
-        <li className='hover:text-[#eb6a2a] pt-2'>
-            <Link href={'/'} >Support Center</Link>
-        </li>
-        <li className='hover:text-[#eb6a2a] pt-2'>
-            <Link href={'/'} >Support Center</Link>
-        </li >
-        <li className='hover:text-[#eb6a2a] pt-2'>
-            <Link href={'/'} >Support Center</Link>
-        </li>
-        <li className='hover:text-[#eb6a2a] pt-2'>
-            <Link href={'/'} >Support Center</Link>
-        </li>
-        <li className='hover:text-[#eb6a2a] pt-2'>
-            <Link href={'/'} >Support Center</Link>
-        </li>
-    </ul>
-</div>
-{/*  */}
-<div>
-<h2 className="heading text-[#1c1c24] text-[18px] font-[500] font-title ">Our Stores</h2>
-<ul className='text-sm text-[#777] font-title '>
-        <li className='hover:text-[#eb6a2a] pt-4'>
-            <Link href={'/'} >Support Center</Link>
-        </li>
-        <li className='hover:text-[#eb6a2a]  pt-2'>
-            <Link href={'/'} >Support Center</Link>
-        </li>
-        <li className='hover:text-[#eb6a2a] pt-2'>
-            <Link href={'/'} >Support Center</Link>
-        </li>
-        <li className='hover:text-[#eb6a2a] pt-2'>
-            <Link href={'/'} >Support Center</Link>
-        </li >
-        <li className='hover:text-[#eb6a2a] pt-2'>
-            <Link href={'/'} >Support Center</Link>
-        </li>
-        <li className='hover:text-[#eb6a2a] pt-2'>
-            <Link href={'/'} >Support Center</Link>
-        </li>
-        <li className='hover:text-[#eb6a2a] pt-2'>
-            <Link href={'/'} >Support Center</Link>
-        </li>
-    </ul>
-</div>
-   </div>
+    return (
+        <div className="pt-16 w-full mt-24 bg-gradient-to-r from-[#000000] to-[#000000] text-gray-300 py-y px-2">
+            <div className="max-w-[1240px] mx-auto gap-6 grid grid-cols-3 md:grid-cols-6 border-b-2 border-gray-600 py-8">
+                {/* Logo Section with More Space */}
+                <div className="col-span-1 md:col-span-2 space-y-4"> {/* Adjusted to take more space */}
+                   <Magnet>
+                    <Image src={Logo} className="object-cover w-48" /> {/* Increased size */}
+                    </Magnet> 
+                    <p>
+                        Ayesha Gadget Store is your one-stop destination for the latest and most
+                        innovative gadgets. From cutting-edge smartphones to essential tech
+                        accessories, we bring you high-quality products at competitive prices.
+                    </p>
+                </div>
 
-   <div className='bg-black  md:flex justify-center py-8 text-white gap-[600px] '>
-    <h2 className='text-center text-sm '>Copyrights By Xpeedstudio - 2018</h2>
-    <h2 className='text-center '>Allow payment base on
-    </h2>
-   </div>
-   </>
-  )
-}
+                {/* Other Sections */}
+                {sections.map((section, index) => (
+                    <div key={index}>
+                        <h6 className="font-bold uppercase pt-2">{section.title}</h6>
+                        <ul>
+                            {section.items.map((item, i) => (
+                                <li key={i} className="py-1 text-gray-500 hover:text-white">
+                                    {item}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                ))}
 
-export default Marketo
+                {/* Newsletter Section */}
+                <div className="col-span-2 pt-8 md:pt-2">
+                    <p className="font-bold uppercase">Subscribe to our newsletter</p>
+                    <p className="py-4">
+                        The latest news, articles, and resources, sent to your inbox weekly.
+                    </p>
+                    <form className="flex flex-col sm:flex-row">
+                        <input
+                            className="w-full p-2 mr-4 rounded-md mb-4"
+                            type="email"
+                            placeholder="Enter email.."
+                        />
+                        <button className="p-2 mb-4">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div className="flex flex-col max-w-[1240px] px-2 py-4 mx-auto justify-between sm:flex-row text-center text-gray-500">
+                <p className="py-4">2025 Ayesha Gadget Store. All rights reserved</p>
+                <div className="flex justify-between sm:w-[300px] pt-4 text-2xl">
+                    {items.map((x, index) => {
+                        return (
+                            <>
+                            <Magnet>
+
+                                <x.icon key={index} className="hover:text-white" />
+                            </Magnet>
+                            </>
+                        );
+                    })}
+                </div>
+            </div>
+        </div>
+
+    );
+};
+
+export default Marketo;

@@ -18,11 +18,7 @@ const ProductClickItems = ({basket, Addproduct , ali }) => {
 
     const [valueShow, setValueShow] = useState('')
     const Laptops = () => {
-        console.log(valueShow, 'without setstates')
         setValueShow('Laptop')
-        console.log(valueShow, 'with setstates')
-
-        // alert('helo')
     }
     const mobilePhones = () => {
         setValueShow('Mobile')

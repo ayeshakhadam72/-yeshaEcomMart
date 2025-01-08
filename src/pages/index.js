@@ -13,38 +13,33 @@ import Navbar from '@/components/navbar'
 import NavbarTypenameproducts from '@/components/NavbartypeName'
 import MyProductBanners from '@/components/productsbanner'
 import ProductBanners from '@/components/productsbanner'
+import SplashCursor from '@/components/SplashCursor'
 import ThisWeekTrending from '@/components/thisweektrending'
 import Topbrands from '@/components/topbrands'
 import Trendingnow from '@/components/Trendingnow'
 import Twocontentimg from '@/components/Twocontentimg'
 import React from 'react'
 
-const Home = ({ Addproduct, basket, loader }) => {
+const Home = ({ Addproduct, basket, ProductLoad }) => {
+  console.log(ProductLoad , 'Homep')
   return (
-  <>
-  <MyProductBanners/>
- {/* <MyBannerhome/> */}
-  {/* <Bannerheader /> */}
-  {/* <Twocontentimg/> */}
-  <NavbarTypenameproducts/>
-  <Trendingnow Addproduct={Addproduct}  />
-  <Goproiphonebanner/>
-  <MyBestDealsproductx Addproduct={Addproduct}  />
-  <Collectionlist/>
-  {/* <Luxurywatch/> */}
-  {/* <Discountproduct Addproduct={Addproduct} /> */}
-  {/* <MostViewd  /> */}
-  {/* <Trendingnow Addproduct={Addproduct}  /> */}
+    <>
+    {/* <SplashCursor/> */}
+      <MyProductBanners />
+      <Trendingnow Addproduct={Addproduct} ProductLoad={ProductLoad}/>
+      <Goproiphonebanner />
+      <MyBestDealsproductx Addproduct={Addproduct} />
+      <Collectionlist />
 
 
-  <Topbrands/>
-  
-  {/* <Country/> */}
 
-<ThisWeekTrending Addproduct={Addproduct} />
-  <Marketo/>
- 
-  </>
+
+
+      <ThisWeekTrending Addproduct={Addproduct} />
+      <Topbrands />
+      <Marketo />
+
+    </>
   )
 }
 

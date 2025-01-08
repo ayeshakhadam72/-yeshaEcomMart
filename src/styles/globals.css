@@ -45,13 +45,10 @@
 }
 #sideicontoggle{
     position: fixed ;
-    background-color: white;
     height: 100vh;
-    width: 350px;
     top: 0;
-    transition-duration: 10s ease in out;
+    transition-duration: .5s ease in out;
     margin: 0px 0px;
-    /* text-align: left; */
 }
 #parent{
     position: relative;
@@ -372,3 +369,7 @@ body{
   height: 100%;
   object-fit: cover;
 }  */
+
+.dropParent #product:hover .drop{
+display: block !important;
+}
