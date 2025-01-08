@@ -6,7 +6,7 @@ import MyProductBanners from '@/components/productsbanner'
 import Topbrands from '@/components/topbrands'
 import React from 'react'
 
-const Headphone = () => {
+const Headphone = ({Addproduct}) => {
   return (
   <>
   <MyProductBanners />
