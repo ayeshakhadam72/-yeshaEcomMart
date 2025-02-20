@@ -16,7 +16,7 @@ const sections = [
 
     {
         title: "Company",
-        items: ["About", "Blog", "Jobs", "Press", "Partners"],
+        items: ["About", "Ali", "Jobs", "Press", "Partners"],
     },
     {
         title: "Legal",
@@ -43,11 +43,14 @@ const Marketo = () => {
                    <Magnet>
                     <Image src={Logo} className="object-cover w-48" /> {/* Increased size */}
                     </Magnet> 
+                    <Magnet>
                     <p>
                         Ayesha Gadget Store is your one-stop destination for the latest and most
                         innovative gadgets. From cutting-edge smartphones to essential tech
                         accessories, we bring you high-quality products at competitive prices.
                     </p>
+                    </Magnet>
+                    
                 </div>
 
                 {/* Other Sections */}
