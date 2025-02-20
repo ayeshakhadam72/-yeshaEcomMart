@@ -8,11 +8,13 @@ import Navbar from '@/components/navbar'
 import ProductClickItems from '@/components/reuseAllproductStructure'
 import Reusestructure from '@/components/ReuseStructuure'
 import ThreeProductcard from '@/components/threeProductcard'
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import { CartData } from '../../../context/cart'
 
 
-const Product = ({basket, Addproduct, ali}) => {
-  console.log(ali, 'ali')
+const Product = () => {
+  const {basket, Addproduct } = useContext(CartData)
+
 
   return (
     <>

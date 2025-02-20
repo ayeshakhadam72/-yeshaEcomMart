@@ -1,8 +1,8 @@
 // import React, { useState } from 'react'
 
 // import Image from 'next/image';
-// import Watch1 from "../../../public/Watch1.png"
-// import Watch2 from "../../../public/Watch2.png"
+// import Watch1 from "../../../public/Watch1.jpg"
+// import Watch2 from "../../../public/Watch2.jpg"
 // import Image1 from "../../../public/imggggggg.jpeg"
 // import Tabsimg from "../../../public/tab.jpeg"
 // import HeadPhone from "../../../public/Headphone.jpeg"
@@ -200,9 +200,11 @@
 // }
 
 // export default Firstsitepage
+
+
 import React from 'react'
 
-const Creat1blog = () => {
+const Create1BlogPost = () => {
   return (
     <div>
       
@@ -210,4 +212,4 @@ const Creat1blog = () => {
   )
 }
 
-export default Creat1blog
+export default Create1BlogPost
