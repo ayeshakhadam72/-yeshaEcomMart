@@ -2,10 +2,7 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 
 
-import Watch1 from "../../../public/Watch1.png"
-import Watch2 from "../../../public/Watch2.png"
-import Tabs from "../../../public/TopTab2.png"
-import HeadPhone1 from "../../../public/headphone2.png"
+
 import Productdata from '../productdata'
 
 const Reusestructure = ({Addproduct}) => {

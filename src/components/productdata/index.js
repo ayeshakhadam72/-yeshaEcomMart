@@ -46,11 +46,11 @@ import MPhone10 from "../../../public/Mphone10.png"
 
 
 import Toptablet1 from "../../../public/TopTab1.webp"
-import Toptablet2 from "../../../public/TopTab2.png"
-import Toptablet3 from "../../../public/TopTab3.png"
+import Toptablet2 from "../../../public/toptab2.png"
+import Toptablet3 from "../../../public/toptab3.png"
 
-import Toptablet4 from "../../../public/TopTab4.png"
-import Toptablet5 from "../../../public/TopTab5.png"
+import Toptablet4 from "../../../public/toptab4.png"
+import Toptablet5 from "../../../public/toptab5.png"
 import Toptablet6 from "../../../public/TopTab6.png"
 import Toptablet7 from "../../../public/TopTab7.webp"
 import Toptablet8 from "../../../public/TopTab8.webp"
