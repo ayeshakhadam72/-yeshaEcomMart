@@ -10,8 +10,6 @@ const Contact = () => {
   return (
    <>
 
-   <Headerafterabout Aboutus= {'Contact us'} givespace = {'mt-5'} />
-   <Formheading/>
    <Form />
    <Map/>
    <Marketo/>

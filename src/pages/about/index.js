@@ -13,7 +13,6 @@ import React from 'react'
 const About = () => {
   return (
    <>
-  <Headerafterabout Aboutus = {'About us'} />
   <Mineabout/>
 
   <Bannerabout/>
@@ -22,7 +21,6 @@ const About = () => {
 
   <Teamcardcontent/>
  <Meetteamabout/>
- {/* <Meetteamabout/> */}
  <Newsletterabout/>
  <Marketo/>
   

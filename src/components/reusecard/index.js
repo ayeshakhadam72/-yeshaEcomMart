@@ -6,10 +6,9 @@ import { CiHeart } from "react-icons/ci";
 import { MdOutlineStar } from "react-icons/md";
 import { FaSpinner } from 'react-icons/fa';
 
-const Reusecard = ({ NoShadow ,   ProductLoad, image, New, view, myproduct, graytext, heading, price, pricenew, border, Addproduct, b }) => {
+const Reusecard = ({ ImgClassName , NoShadow, ProductLoad, image, New, view, myproduct, graytext, heading, price, pricenew, border, Addproduct, b }) => {
 
 
-  console.log(ProductLoad, 'ReusePro')
 
   return (
     <>
@@ -17,7 +16,7 @@ const Reusecard = ({ NoShadow ,   ProductLoad, image, New, view, myproduct, gray
       <div className={`${border} ${ProductLoad && 'opacity-50'} ${NoShadow && 'shadow-none'} bg-white group relative sameclass shadow-2xl rounded-xl  border-[1px] border-gray-300   `} >
 
         <div className=''>
-          <Image src={image} className={`${border}`} width={252} height={254} />
+          <Image src={image} className={`${border} ${ImgClassName}`} width={252} height={254} />
         </div>
         <div className='Quick Shop items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex 
 justify-center  absolute  bottom-[36%]  w-full bg-[#000000] hover:bg-black ' >

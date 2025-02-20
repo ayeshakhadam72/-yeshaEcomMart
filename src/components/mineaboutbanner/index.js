@@ -1,15 +1,10 @@
-import Image from 'next/image'
 import React from 'react'
-
-
-// import Mineaboutbanner from "../../../public/mineaboutbanner.jpg"
 const Mineabout = () => {
   return (
     <div  id='aboutbanner' className='flex justify-end items-end lg:items-center '>
-<div className='text-black lg:w-[40%] bg-white p-8'>
-  <h2 className='text-4xl font-semibold '>Story About Us</h2>
-  <p className='py-5'>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>
-  <p> <span className='text-2xl font-semibold '>Founder</span> Alex Turner </p>
+<div className='text-black lg:w-[40%] rounded-lg bg-[#ffffff70] p-8'>
+  <h2 className='text-4xl font-semibold text-white '>Why Choose Us</h2>
+  <p className='py-5  text-white '>At Ayesha Gadget Store, we bring you the latest and most innovative gadgets at unbeatable prices. From smart devices to everyday tech essentials, we ensure quality, reliability, and affordability in every product. Our mission is to provide cutting-edge technology that enhances your lifestyle, whether you’re a tech enthusiast or just looking for the perfect gadget.x</p>
 </div>
     </div>
   )

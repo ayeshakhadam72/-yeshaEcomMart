@@ -3,11 +3,16 @@
 import Mycheckout from '@/components/mycheckout'
 import React from 'react'
 
-const CheckOut = ({basket}) => {
+const CheckOut = ({ basket }) => {
   return (
-   <>
-   <Mycheckout basket={basket} />
-   </>
+    <>
+      {
+        basket?.length == 0 ? <h1> Empty Cart </h1> :
+          <Mycheckout basket={basket} />
+
+      }
+
+    </>
   )
 }
 

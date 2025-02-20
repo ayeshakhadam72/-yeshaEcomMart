@@ -1,15 +1,16 @@
-import React from 'react';
-import Reusecard from '../reusecard';
-import Productdata from '../productdata';
-
-// Import Swiper components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination } from 'swiper/modules';
+import { CartData } from '../../../context/cart';
+import React, { useContext } from 'react';
+import Reusecard from '../reusecard';
+import Productdata from '../productdata';
 
-const ThisWeekTrending = ({ Addproduct }) => {
+const ThisWeekTrending = () => {
+  const { Addproduct } = useContext(CartData)
+
   return (
     <>
       <div className="flex justify-center mt-20 mb-10">
@@ -22,7 +23,7 @@ const ThisWeekTrending = ({ Addproduct }) => {
         <div className="lg:w-[80%]">
           {/* Swiper Slider */}
           <Swiper
-          className=' '
+            className=' '
             spaceBetween={20}
             slidesPerView={1}
             navigation
@@ -33,11 +34,12 @@ const ThisWeekTrending = ({ Addproduct }) => {
             }}
             modules={[Navigation, Pagination]}
           >
-            {Productdata.slice(16, 25).map((b) => (
+            {Productdata.map((b) => (
               <SwiperSlide key={b.productid} className='bg-transparent'>
                 <Reusecard
                   border="mt-5 border-none hover:text-[#161880]"
                   image={b.productimage}
+                  ImgClassName="w-52 h-52 object-contain flex m-auto"
                   heading={b.productname}
                   price="$720.00"
                   pricenew={b.productprice}
@@ -49,12 +51,9 @@ const ThisWeekTrending = ({ Addproduct }) => {
                   New="sale"
                   NoShadow
                 />
-                {/* <p>
-
-                  lorem lorem lorem lorem lorem lorem
-                </p> */}
+             
               </SwiperSlide>
-          
+
             ))}
           </Swiper>
         </div>
@@ -64,3 +63,5 @@ const ThisWeekTrending = ({ Addproduct }) => {
 };
 
 export default ThisWeekTrending;
+
+

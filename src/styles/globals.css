@@ -340,7 +340,7 @@ body{
     width: 436px;
 }
 #aboutbanner{
-  background-image: url('/mineaboutbanner.jpg');
+  background-image: url('/about.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

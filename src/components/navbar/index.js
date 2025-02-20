@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { FaBagShopping, FaBasketShopping, FaCartShopping } from "react-icons/fa6";
@@ -10,10 +10,10 @@ import Link from 'next/link';
 
 import TopBar from './topbar';
 import Magnet from '../Magnet';
+import { CartData } from '../../../context/cart';
 
-
-const Navbar = ({ ProductLoad, cart, basket }) => {
-  console.log(ProductLoad , 'Proddddd')
+const Navbar = () => {
+  const { ProductLoad, basket } = useContext(CartData);
   const [openIcon, setopenIcon] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -38,15 +38,15 @@ const Navbar = ({ ProductLoad, cart, basket }) => {
   }
   useEffect(() => {
 
-setTimeout(() => {
-  if (ProductLoad) {
-    setopenIcon(true);
-    console.log("Menu opened!");
-  } 
-}, 2000);
+    setTimeout(() => {
+      if (ProductLoad) {
+        setopenIcon(true);
+        console.log("Menu opened!");
+      }
+    }, 2000);
 
-  
-  }, [ProductLoad]);  
+
+  }, [ProductLoad]);
   return (
     <>
       <TopBar />
@@ -142,9 +142,9 @@ setTimeout(() => {
               return (
 
                 <div className='py-3 border-b-[1px] border-gray-200 flex gap-6 '>
-                <Magnet>
-                  <Image src={b.productimage} className='w-[70px] h-[70px] object-cover rounded-full ' />
-                  </Magnet> 
+                  <Magnet>
+                    <Image src={b.productimage} className='w-[70px] h-[70px] object-cover rounded-full ' />
+                  </Magnet>
                   <h2 className=' text-left my-auto '>
                     <span className=' text-lg font-[400] capitalize text-left text-white'> {b.productname} </span>
                     <h1 className=' text-lg font-bold  text-white'>Rs {b.productprice}PKR </h1>
@@ -166,7 +166,7 @@ setTimeout(() => {
                 </div>
               </div>
               <div className=' text-center grid mt-5'>
-                <button className='text-md font-semibold py-2 px-24 rounded-full bg-gray-100  '>VIEW CART</button>
+                <button className='text-md font-semibold py-2  rounded-full bg-gray-100  '  onClick={iconsclose}>Continue Shopping</button>
                 <button className='text-md font-semibold text-white py-2 px-24 rounded-full bg-[#f07f13] mt-3 '>
                   <Link href={'/checkout'} >CHECKOUT</Link>
                 </button>
@@ -222,7 +222,6 @@ setTimeout(() => {
 
 
 
-      {/* click button and hide */}
 
 
     </>

@@ -5,6 +5,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { FaArrowRightLong } from "react-icons/fa6";
+import CosmosBackground from '../cosmos-background';
 
 const MyProductBanners = () => {
   return (

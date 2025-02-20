@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Reusecard from '../reusecard'
 
 
 import Productdata from '../productdata'
+import { CartData } from '../../../context/cart'
 
-const MyBestDealsproductx = ({ Addproduct }) => {
+const MyBestDealsproductx = () => {
+  const {Addproduct} = useContext(CartData)
   return (
     <>
 
@@ -24,10 +26,12 @@ const MyBestDealsproductx = ({ Addproduct }) => {
             {/*  */}
             <div className='xl:w-[70%] flex gap-4 flex-wrap'>
               {
-                Productdata.slice(0, 8).map((b) => {
+                Productdata.slice(0, 8).map((b , index) => {
                   return (
-                    <Reusecard border={' rounded-lg  border-none hover:text-[#161880]'} image={b.productimage} heading={b.productname} price={'$720.00'} pricenew={b.productprice} b={b} Addproduct={Addproduct}
+                   <div key={index}>
+                     <Reusecard border={' rounded-lg  border-none hover:text-[#161880]'} image={b.productimage} heading={b.productname} price={'$720.00'} pricenew={b.productprice} b={b} Addproduct={Addproduct}
                       graytext={b.productstock} />
+                    </div>
                   )
                 })
 

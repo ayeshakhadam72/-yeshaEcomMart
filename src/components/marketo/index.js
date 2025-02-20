@@ -9,6 +9,7 @@ import {
     FaTwitch,
 } from "react-icons/fa";
 import Magnet from "../Magnet";
+import CosmosBackground from "../cosmos-background";
 
 const sections = [
 
@@ -33,7 +34,9 @@ const items = [
 
 const Marketo = () => {
     return (
+      <>
         <div className="pt-16 w-full mt-24 bg-gradient-to-r from-[#000000] to-[#000000] text-gray-300 py-y px-2">
+            
             <div className="max-w-[1240px] mx-auto gap-6 grid grid-cols-3 md:grid-cols-6 border-b-2 border-gray-600 py-8">
                 {/* Logo Section with More Space */}
                 <div className="col-span-1 md:col-span-2 space-y-4"> {/* Adjusted to take more space */}
@@ -94,6 +97,7 @@ const Marketo = () => {
                 </div>
             </div>
         </div>
+      </>
 
     );
 };
